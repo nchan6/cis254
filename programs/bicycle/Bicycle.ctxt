@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=name\ license
+comment0.target=Bicycle(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getOwnerName()
+comment2.params=name
+comment2.target=void\ setOwnerName(java.lang.String)
+comment3.params=
+comment3.target=int\ getLicenseNumber()
+comment4.params=license
+comment4.target=void\ setLicenseNumber(int)
+numComments=5
