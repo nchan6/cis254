@@ -22,7 +22,7 @@ public class AreaCalculator
             //prompts user for a radius
             System.out.print("enter a radius : ");
             radius = input.nextDouble();
-        } while (radius < 0);
+        } while (radius <= 0);
        
         //passes the variable radius to the method to calculate the area of the circle
         double areaOfCircle = findArea(radius);
@@ -35,7 +35,7 @@ public class AreaCalculator
             //prompts user for a length
             System.out.print("\nenter a length : ");
             length = input.nextDouble();
-        } while ( length < 0);
+        } while ( length <= 0);
         
         //forces the user to input a width greater than 0
         do{
