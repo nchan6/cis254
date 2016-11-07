@@ -8,7 +8,7 @@
 public class BicycleTest {
 
     public static void main( String[] args )  {
-		System.out.println("programmed by Norris Chan”);
+		System.out.println("programmed by Norris Chan");
 
 		// Create 1 Bicycle reference variable. For example: myBike
 		

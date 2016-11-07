@@ -54,9 +54,13 @@ public class Rainfall
         }
         
        //final output
-       System.out.printf("\nAverage rainfall for %s in %d: %.2f inches", city, year, average);
-       System.out.printf("\n%d months had rainfall below or equal to the average", lessOrEqual);
-       System.out.printf("\n%d months ahd rainfall above average", greater);
+       System.out.printf("\n\nAverage rainfall for %s in %d: %.2f inches%n", city, year, average);
+       // prints out the rainfall for each month
+       for (int output = 0; output < 12; output++){
+           System.out.printf("%9s%20.2f%n",month[output], rainfall[output]);
+        }
+       System.out.printf("%n%d months had rainfall below or equal to the average", lessOrEqual);
+       System.out.printf("%n%d months ahd rainfall above average", greater);
        
     }
     
