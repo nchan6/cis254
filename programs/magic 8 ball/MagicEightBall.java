@@ -6,13 +6,11 @@
 // Assignment #6
 // 11/13
 import java.util.*;
+import javax.swing.JOptionPane;
 public class MagicEightBall
 {
     public static void main(String[] args){
-        System.out.println("programmed by norris chan");
-        
-        
-        System.out.println(Math.random());
+        JOptionPane.showMessageDialog(null,"programmed by norris chan");
         
         Scanner input = new Scanner(System.in);
         
@@ -25,22 +23,23 @@ public class MagicEightBall
                                     "Don't count on it", "My reply is no", "My sources say no",
                                     "Outlook not so good", "Very doubtful"};
         
-        String cont = "";
-                                    
-        do{
-            //promts user for a question
-            System.out.println("What is your question?");
-            String question = input.next();
-            
-            //prints a random response from the random generated number
-            System.out.println(randomResponses[generateRandNum()]);
-            
-            //asks the user if they want to continue
-            System.out.println("Do you want to ask another question? enter yes or no");
-            cont = input.next();
-            
-            //while loop continues to run when the user enters yes
-            } while (cont == "yes");
+        //creating the referencet to that ImageIcon object to display the image in the output dialog box
+        ImageIcon image = new ImageIcon("8ball_small.jpg");
+    }
+    
+    //to display the magic 8 ball image in the output dialog box
+    public static void showMessageDialog(Component parentComponent, Object message, String title, int messageType, Icon icon){
+        parentComponent = null;
+        String messageDisplay = message;
+        String displayTitle = title;
+        messageType = 0;
+        ImageIcon image = icon;
+        
+    }
+    
+    //to use ae yes/ nno dialog box
+    public static int showConfirmDialog(Component parentComponent, Object message, String title, int optionType, int messageType, Icon icon){
+        
     }
     
     //generates random number between 0-19
