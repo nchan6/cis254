@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=668
+objectbench.width=678
 package.editor.height=400
 package.editor.width=570
-package.editor.x=244
-package.editor.y=251
+package.editor.x=23
+package.editor.y=260
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
@@ -12,8 +12,8 @@ package.showUses=true
 project.charset=UTF-8
 target1.editor.height=766
 target1.editor.width=1165
-target1.editor.x=580
-target1.editor.y=239
+target1.editor.x=275
+target1.editor.y=26
 target1.height=50
 target1.name=MagicEightBall
 target1.naviview.expanded=true
