@@ -6,16 +6,32 @@
 // Assignment #7
 // 11/25/16
 
-import java.util.*;
 import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Password
 {
-    public static void main(String[] args){ 
-       Scanner input = new Scanner(System.in);
+    public static void main(String[] args){    
+       JPanel panel = new JPanel();
+       JLabel label = new JLabel("Enter a password:");
+       JPasswordField pass = new JPasswordField(10);
+       // place the label and the password field on the JPanel container
+       panel.add(label);
+       panel.add(pass);
+       String[] options = new String[]{"OK", "Cancel"};
+       int option = JOptionPane.showOptionDialog(null, panel, "password",
+       JOptionPane.NO_OPTION, JOptionPane.PLAIN_MESSAGE,
+       null, options, options[1]);
+       System.out.println(option);
        
+       if(option == 0){ // OK button was pressed
        
+       }
+       // retrieve the password from the input field
+       char[] password = pass.getPassword();
+       System.out.println("Your password is: " + new String(password));
     }
+    
     
     public static boolean isValidPassword(String pass){
         boolean validLength = false;
