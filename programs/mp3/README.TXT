@@ -1,12 +1,32 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+UML class diagrams for the MP3 class and the MP3Collection class
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+Norris Chan
+
+MP3 class
+____________
+-artist : String
+-song : String
+-album : String
+-trackLength : int
+____________
+<<constructor>> MP3(artist : String, song : String, album : String, trackLength : int)
++ setArtist(artist1 : String)
++ setSong(song1 : String)
++ setAlbum( album1 : String)
++ setTrackLength(trackLength1 : int)
++ getArtist() :String
++ getSong() : String
++ getAlbum() : String
++ getTrackLength() : int
++ toString() : String
+
+
+
+MP3Collection class
+____________
+-count : int
+-MP3Collection : ArrayList<MP3>
+____________
+<<constructor>> addMP3(artist : String, song : String, album : String, trackLength : int)
++ getCount() : int
++ toString() : String
